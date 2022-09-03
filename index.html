@@ -2,26 +2,22 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8"/>
-<title>paste</title>
+
 <style>
 * {
   box-sizing: border-box;
-  font-family: monospace;
-  font-size: 1.1em;
+  font-family: arial;
+  font-size: 1em;
 }
 #plaintext {
   width: 100%;
   height: 100%;
-  padding: .5em;
+  padding: 1.2em;
   border: 0;
   margin: 0;
   resize: none;
   color: #eeeeee;
-  background: #000000;
-}
-body.invert #plaintext {
-  color: #000000;
-  background: #eeeeee;
+  background: #1c1c1c;
 }
 #plaintext-wrapper {
   position: absolute;
@@ -39,13 +35,9 @@ body.invert #plaintext {
   line-height: 2em;
   text-align: right;
   vertical-align: middle;
-  background: #333333;
+  background: #000;
   color: #ffffff;
   white-space: nowrap;
-}
-body.invert #nav {
-  background: #aaaaaa;
-  color: #000000;
 }
 #nav .nav-left {
   float: left;
@@ -60,9 +52,6 @@ body.invert #nav {
 #nav a:hover {
   background: #666666;
 }
-body.invert #nav a:hover {
-  background: #999999;
-}
 #nav #text-offer-value {
   border: 1px solid #999999;
   background: transparent;
@@ -74,6 +63,18 @@ body.invert #nav a:hover {
 #nav .nav-text-offer { display:none; }
 #nav.text-offer .nav-default { display:none; }
 #nav.text-offer .nav-text-offer { display:inline; }
+
+body.invert #nav {
+  background: #aaaaaa;
+  color: #000000;
+}
+body.invert #plaintext {
+  color: #000000;
+  background: #eeeeee;
+}
+body.invert #nav a:hover {
+  background: #999999;
+}
 </style>
 <script src="lzma.js"></script>
 <script>
@@ -164,6 +165,6 @@ function invert() {
 </head>
 <body>
 <div id="plaintext-wrapper"><textarea id="plaintext" spellcheck="false"></textarea></div>
-<div id="nav"><span class="nav-default"><a class="nav-left" href="https://github.com/topaz/paste">[github]</a><a class="nav-left" onclick="invert()">[invert colors]</a><a onclick="url_generate('raw')">[generate url]</a><a onclick="url_generate('markdown')">[generate markdown link]</a></span><span class="nav-text-offer"><input id="text-offer-value"/><a onclick="text_offer_copy()">[copy]</a><a onclick="text_offer_cancel()">[cancel]</a></span></div>
+<div id="nav"><span class="nav-default"><a class="nav-left" href="https://github.com/bloodyeyesblackblood/paste">[source code]</a><a class="nav-left" onclick="invert()">[invert colors]</a><a onclick="url_generate('raw')">[gene. url]</a><a onclick="url_generate('markdown')">[gene. markdown link]</a></span><span class="nav-text-offer"><input id="text-offer-value"/><a onclick="text_offer_copy()">[copy]</a><a onclick="text_offer_cancel()">[cancel]</a></span></div>
 </body>
 </html>
