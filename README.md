@@ -1,4 +1,7 @@
-Try it here: https://topaz.github.io/paste/
+My Version - https://paste.bloodyeyes.xyz/ | Original https://topaz.github.io/paste/
+
+(What does the Version I offer provide?
+..not much, just a few differnet colors, paddings & font-size choices)
 
 This is a no-datastore, client-side paste service.  It turns text into [LZMA](https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm)-compressed, [Base64](https://en.wikipedia.org/wiki/Base64)-encoded URLs.
 
